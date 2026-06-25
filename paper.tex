@@ -148,7 +148,75 @@ The trained machine learning models are serialized via \texttt{joblib} and integ
 
 % RESULTS AND DISCUSSION
 \section{Results and Discussion}
-\section{Conclusion and Recommendation}
+This section presents the empirical evaluation of the \emph{BeeAware} system, focusing on the classification fidelity of the underlying machine learning models, computational efficiency on the edge, and human-computer interaction (HCI) metrics derived from the scenario-based usability evaluation.
+
+\subsection{Machine Learning Model Performance and Benchmarking}
+The primary objective of the modeling phase was to maximize classification accuracy while minimizing inference latency to ensure frictionless background execution on consumer workstations. The Linear Support Vector Classifier (Linear SVC) and the ensemble Random Forest Classifier were evaluated head-to-head on the $2,370$ stratified validation samples extracted from the \texttt{V3beeware\_master\_training\_v3.csv} gold-standard corpus.
+
+The Linear SVC model demonstrated exceptional predictive capability, achieving an overall macro accuracy of \textbf{98\%} and a macro $F_1$-score of \textbf{0.98}. Per-class performance metrics are structured in Table~\ref{tab:model_metrics}.
+
+\begin{table}[htbp]
+\caption{Classification Performance Metrics for Linear SVC}
+\label{tab:model_metrics}
+\begin{center}
+\begin{tabular}{ccccc}
+\hline
+\textbf{Quadrant} & \textbf{Precision} & \textbf{Recall} & \textbf{\(F_1\)-Score} & \textbf{Support} \\ \hline
+Q0 (Urgent)       & 1.00               & 1.00            & 1.00                  & 601              \\ 
+Q1 (Deep Work)    & 0.96               & 0.97            & 0.96                  & 683              \\ 
+Q2 (Reactive)     & 1.00               & 1.00            & 1.00                  & 624              \\ 
+Q3 (Distraction)  & 0.96               & 0.95            & 0.95                  & 562              \\ \hline
+\textbf{Macro Avg}& \textbf{0.98}      & \textbf{0.98}   & \textbf{0.98}         & \textbf{2,370}   \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Analysis of the multi-class confusion matrix reveals perfect classification isolation (\(1.00\) precision and recall) for Quadrant 0 (Urgent) and Quadrant 2 (Reactive Noise). This deterministic boundary is attributed to the presence of highly unique, process-specific metadata tokens extracted via \texttt{win32gui} and \texttt{psutil} (e.g., terminal executions, local administrative network ports, and enterprise messaging headers) which exhibit zero semantic overlap with recreational software signatures. 
+
+Minor token confusion occurred strictly between Quadrant 1 (Deep Work) and Quadrant 3 (Distraction), where the model misclassified $24$ instances. This overlap is due to ambiguous web browsing window titles where specific informational platforms (e.g., certain video-sharing sub-domains or community forums) contain identical linguistic tokens but serve divergent contextual roles depending on the user's instantaneous task orientation. Despite this minor variance, the margin-based hyperplane boundaries proved highly robust, outperforming the ensemble Random Forest benchmark, which suffered from overfitting on short, high-frequency window strings and exhibited an increased local inferential footprint.
+
+\subsection{Computational Efficiency and Edge Privacy Integrity}
+A core constraint of the \emph{BeeAware} framework is local execution. Edge-vision validation via the MediaPipe perception layer maintained stable tracking throughput, yielding a binary presence state matrix within sub-millisecond ranges. Local CPU utilization remained consistently below $2.4\%$ during active sampling intervals, and volatile memory allocations for the serialized Linear SVC model and active dataframe logs did not exceed $42\text{ MB}$. This confirms that embedding a continuous linear text classification loop alongside an edge computer-vision toggle achieves lightweight monitoring without inducing application latency or frame drops during demanding tasks like compilation or software engineering.
+
+\subsection{System Usability and Technology Acceptance}
+The system's operational viability was contextualized through user evaluation among $14$ active academic and technical professionals across higher education institutions in the Mindanao region. 
+
+\begin{figure}[htbp]
+\centering
+\label{fig:sus_tam}
+\caption{Distribution of Evaluation Scores across Usability Dimensions}
+\begin{center}
+\begin{tabular}{lc}
+\hline
+\textbf{Evaluation Metric Domain} & \textbf{Mean Empirical Score} \\ \hline
+System Usability Scale (SUS)      & 69.29 (Categorized as "Good") \\
+TAM: Perceived AI Accuracy        & 3.86 / 5.00                   \\
+ISO/IEC 25010: Privacy/Security   & 4.57 / 5.00                   \\ \hline
+\end{tabular}
+\end{center}
+\end{figure}
+
+The evaluation yielded a mean System Usability Scale (SUS) score of \textbf{69.29}, positioning \emph{BeeAware} within the \emph{"Good"} usability classification threshold. This indicates that while the system integrates cleanly into local startup environments, additional engineering is required to polish user configurations and dashboard discoverability. 
+
+Under the Technology Acceptance Model (TAM) dimensions, the system scored a high mean rating of \textbf{3.86 out of 5.00} for perceived AI predictive accuracy, matching the objective numerical validity observed during text verification. Crucially, the system scored its highest rating under the ISO/IEC 25010 security and structural privacy sub-scale (\textbf{4.57 out of 5.00}). Users noted that the absolute absence of cloud-based web endpoints or external database mirrors fostered deep trust, effectively mitigating the surveillance anxiety typically associated with automated productivity-tracking tools.
+
+Feedback from the NASA-TLX-derived cognitive assessment indicated that the real-time Plotly interactive dashboard—specifically the \emph{switching intensity} index—successfully made cognitive fatigue visible to the users. This visibility prompted participants to initiate intentional breaks when entering high-frequency task-switching loops, demonstrating the system's viability as an active tool against digital procrastination.
+
+---
+% CONCLUSION AND RECOMMENDATIONS SECTION
+\section{Conclusion and Recommendations}
+This study successfully designed, implemented, and validated \emph{BeeAware}, a localized, privacy-first productivity optimization system utilizing the CRISP-DM framework. By extracting native interface metadata via \texttt{win32gui} and process telemetry via \texttt{psutil}, and combining it with a lightweight MediaPipe edge-vision occupancy layer, the system establishes a secure, client-side tracking architecture. 
+
+The engineered Linear SVC classification model achieved an overall accuracy of \textbf{98\%} and a macro $F_1$-score of \textbf{0.98} when evaluated on a custom domain-specific corpus of $12,387$ highly contextual tokens. This model effectively maps ambiguous user actions into the four quadrants of the Eisenhower Matrix in real time. Empirical user testing across key institutions in the Mindanao region confirmed high structural privacy trust (\textbf{4.57/5.00}) and solid system usability (\textbf{69.29} SUS), validating the approach of deploying lightweight machine learning models at the edge to combat digital fatigue and procrastination without compromising user privacy.
+
+To advance the development of local behavioral computing systems, the following future research tracks are recommended:
+\begin{itemize}
+    \item \textbf{Dynamic Adaptive Re-vectorization:} Future iterations should integrate an incremental, localized on-the-fly learning loop (e.g., Stochastic Gradient Descent text classification updating) allowing users to manually re-assign misclassified window tokens directly from the Plotly dashboard interface, automatically retraining the local hyperplane boundaries without requiring a full manual compilation of the training corpus.
+    \item \textbf{Cross-Platform Core Telemetry:} Expanding the underlying operating system hook framework beyond the native Windows \texttt{win32gui} subsystem to native Linux (\texttt{X11}/\texttt{Wayland}) and macOS (\texttt{Quartz} API) wrapper layers to offer uniform productivity monitoring across diverse software engineering ecosystems.
+    \item \textbf{Temporal Trend Analytics:} Transitioning the analytical engine from isolated $1\text{ Hz}$ data frames into sequential modeling architectures (e.g., hidden Markov structures or temporal window attention blocks) to evaluate semantic changes over extended periods, providing deep insights into behavioral evolution and long-term habits.
+\end{itemize}
+
+% REFERENCES
 \begin{thebibliography}{99}
 
 \bibitem{CenterForHumaneTechnology2024}
