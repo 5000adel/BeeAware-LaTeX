@@ -30,12 +30,30 @@ Davao City, Philippines \\
 \maketitle
 
 \begin{abstract}
+    
 \end{abstract}
 
 \begin{IEEEkeywords}
 \end{IEEEkeywords}
 
 \section{Introduction}
+
+    The global digital landscape has transformed personal computers into double-edged instruments of unprecedented economic productivity and relentless cognitive fragmentation. Globally, digital consumption has surged dramatically, with users averaging nearly seven hours of daily internet exposure spent navigating algorithmically optimized digital ecosystems \cite{Kemp2025, Meltwater2025}. This continuous connectivity has given rise to a global attention economy that engineered platforms to systematically exploit human cognitive vulnerabilities, resulting in a documented decline in individual attention spans and psychological well-being \cite{CenterForHumaneTechnology2024, Mark2023}. Modern workspaces frequently demand prolonged interaction with digital screens, yet these environments expose users to perpetual interruptions, inducing a state of chronic task-switching and cognitive fatigue \cite{Tandon2021}. This tension underscores a critical problem in Human-Computer Interaction (HCI): while digital connectivity is mandatory for modern workflows, it simultaneously degrades the focused concentration required to execute high-value cognitive tasks \cite{Newport2019}.
+
+    In the national context of the Philippines, these digital dependencies severely stress emerging remote working and hybrid academic paradigms. Recent regional metrics show that the typical Filipino internet user maintains some of the highest daily media consumption rates globally, a trend that directly mirrors a sharp inflation in smartphone and internet dependency among students and the white-collar workforce \cite{Meltwater2025}. While this hyper-connectivity supports the country's booming digital labor market, it introduces a severe systemic vulnerability: high-frequency digital distractions are closely linked to escalating rates of academic procrastination, psychological distress, and a notable drop in overall academic performance \cite{Tiking2024, Geronimo2025, Vimala2025}. This digital disruption limits professional efficacy and destabilizes work-life balance within domestic environments, threatening organizational commitment across local public and private sectors \cite{Tecson2026}. Consequently, there is an urgent national need for scalable, localized tools that can protect productivity without compromising user privacy.
+
+    At the immediate local level, this crisis is visibly apparent within regional educational and administrative infrastructures. Regional directives, such as the Department of Education (DepEd) Davao Region Strategic Plan, have explicitly prioritized digital literacy alongside the cultivation of responsible digital citizenship to mitigate the erosion of student study habits caused by mobile phone and desktop dependencies \cite{DepEdDavao2025, Geranco2026}. However, existing digital time-management interventions fall short of these objectives. Commercial tracking tools like RescueTime or Apple Screen Time operate on passive, historical charting mechanics that provide retroactive awareness rather than real-time behavioral guidance \cite{Abhari2022}. Furthermore, these systems require users to manually input and categorize their activities—a tedious administrative hurdle that often leads to rapid user abandonment \cite{Lally2013}. More critically, modern users are increasingly hesitant to adopt tracking utilities that exfiltrate sensitive, second-by-second desktop logs to external cloud servers, creating a fundamental tension between productivity logging and individual data privacy.
+
+    To bridge these gaps, this paper presents \textbf{BeeAware}, a localized, privacy-preserving edge-AI tracking and behavioral coaching ecosystem. Built on the six phases of the Cross-Industry Standard Process for Data Mining (CRISP-DM) framework, BeeAware transforms passive operating system telemetry into active behavioral interventions. The core architecture automatically intercepts active window title text streams and classifies them across the four quadrants of the Eisenhower Matrix—Urgent/Important (Deep Work), Urgent/Not Important (Reactive Noise), Not Urgent/Important (Strategic Planning), and Not Urgent/Not Important (Distraction)—mitigating the cognitive biases that lead individuals to prioritize short-term trivialities over long-term goals \cite{Covey1989, Zhu2018}. By executing text feature extraction via Term Frequency-Inverse Document Frequency (TF-IDF) alongside a localized, lightweight margin classifier, BeeAware delivers real-time, context-aware push notifications to gently nudge users back toward their intended workflows \cite{Thaler2021, Fogg2009}. Crucially, the entire machine learning inference loop executes locally on the host machine, ensuring absolute data privacy.
+
+    The principal contributions of this research are structured as follows:
+    \begin{itemize}
+        \item \textbf{Privacy-Preserving Edge Architecture}: We design and implement a zero-cloud, client-side tracking system that processes low-level operating system telemetry entirely within local runtime boundaries, eliminating external data vulnerability risks.
+        \item \textbf{Context-Aware Multi-Class Classification}: We develop a lightweight Natural Language Processing (NLP) pipeline optimized for high-dimensional, short-text window titles to dynamically map active user states into behavioral matrix coordinates.
+        \item \textbf{Real-Time Persuasive Intervention Engine}: We integrate a localized feedback mechanism that translates real-time classification changes into non-intrusive behavioral nudges, encouraging sustainable habit formation.
+        \item \textbf{Empirical Usability Evaluation}: We validate the system's operational viability and user acceptance through structured System Usability Scale (SUS) assessments within a live environment \cite{Bangor2008, Sauro2016}.
+    \end{itemize}
+
 \section{Related Work}
 % [Add Related works in $\backslash$subsection]
 \subsection{Related Works Subsection}
@@ -44,9 +62,118 @@ Davao City, Philippines \\
 \subsection{Subsections}
 \section{Results and Discussion}
 \section{Conclusion and Recommendation}
-% --- Embedded References Array to bypass missing external compilation errors ---
-\begin{thebibliography}{10}
-\bibitem{REN2021100178}
-Reference Template 1
+\begin{thebibliography}{99}
+
+\bibitem{CenterForHumaneTechnology2024}
+Center for Humane Technology, ``The ledger of harms: How digital platforms impact our attention and well-being,'' 2024. [Online]. Available: \url{https://www.humanetech.com/youth/the-attention-economy}
+
+\bibitem{Cormen2009}
+T.~H. Cormen, C.~E. Leiserson, R.~L. Rivest, and C.~Stein, \emph{Introduction to Algorithms}, 3rd ed. Cambridge, MA, USA: MIT Press, 2009.
+
+\bibitem{Covey1989}
+S.~R. Covey, \emph{The 7 Habits of Highly Effective People}. New York, NY, USA: Free Press, 1989. [Online]. Available: \url{https://www.nps.gov/common/uploads/teachers/lessonplans/7%20Habits-of-Highly-Effective-People.pdf}
+
+\bibitem{DepEdDavao2025}
+Department of Education (DepEd) Davao Region, ``Strategic plan for digital literacy and responsible citizenship,'' Regional Memorandum No. 114, 2025. [Online]. Available: \url{https://depedroxi.ph/download-category/2025-2026/}
+
+\bibitem{Geranco2026}
+L.~O. Geranco and J.~R. Sarmiento, ``Impact of mobile phone dependency on the study habits of grade 11 and 12 students,'' \emph{Global Scientific Journal}, vol. 11, no. 5, pp. 102--115, 2026. [Online]. Available: \url{https://www.globalscientificjournal.com/researchpaper/IMPACT_OF_MOBILE_PHONE_DEPENDENCY_ON_THE_STUDY_HABITS_OF_GRADE_11_AND_12_STUDENTS_.pdf}
+
+\bibitem{Kemp2025}
+S.~Kemp, ``Digital 2025: Global overview report,'' DataReportal, 2025. [Online]. Available: \url{https://datareportal.com/reports/digital-2025-global-overview-report}
+
+\bibitem{Lally2013}
+P.~Lally and B.~Gardner, ``Promoting habit formation,'' \emph{Health Psychology Review}, vol. 7, no. sup1, pp. S137--S158, 2013. [Online]. Available: \url{https://doi.org/10.1080/17437199.2011.603640}
+
+\bibitem{Tiking2024}
+N.~J. Tiking, A.~K. Dabbang, and S.~A. Fadare, ``Navigating the social media abyss: Unraveling the link between academic procrastination and social media addiction,'' \emph{Educational Administration: Theory and Practice}, vol. 30, no. 5, pp. 6833--6844, 2024.
+
+\bibitem{Geronimo2025}
+M.~Geronimo, J.~A. Maddatu, I.~Magcamit, M.~L. Saylon, and J.~Cleofas, ``Academic procrastination and its relationship with mental well-being, psychological distress, and background characteristics among Metro Manila students enrolled in a hybrid setup,'' \emph{WVSU Research Journal}, vol. 14, no. 1, pp. 34--47, 2025.
+
+\bibitem{Mark2023}
+G.~Mark, \emph{Attention Span: A Groundbreaking Way to Restore Balance, Happiness and Productivity}. Hanover Square Press, 2023.
+
+\bibitem{Meltwater2025}
+Meltwater \& We Are Social, ``Digital 2026: Philippines report,'' 2025. [Online]. Available: \url{https://www.datareportal.com/reports/digital-2026-philippines}
+
+\bibitem{Newport2019}
+C.~Newport, \emph{Digital Minimalism: Choosing a Focused Life in a Noisy World}. New York, NY, USA: Penguin Books, 2019.
+
+\bibitem{Tecson2026}
+C.~P. Tecson and N.~I. Prado, ``Digital competence, work-life balance, organizational commitment and job performance of local government units in Northern Mindanao, Philippines,'' \emph{International Journal of Research and Innovation in Social Science}, vol. 10, no. 2, pp. 5555--5567, 2026. [Online]. Available: \url{https://doi.org/10.47772/IJRISS.2026.10200409}
+
+\bibitem{Thaler2021}
+R.~H. Thaler and C.~R. Sunstein, \emph{Nudge: The Final Edition}. New York, NY, USA: Yale University Press, 2021.
+
+\bibitem{Dong2025}
+Z.~Dong, K.~Wu, L.~Battle, and E.~Wall, ``Evaluating behavior change interventions for responsible data science,'' in \emph{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI)}, 2025.
+
+\bibitem{Narechania2021}
+A.~Narechania, A.~Coscia, E.~Wall, and A.~Endert, ``Lumos: Increasing awareness of analytic behavior during visual data analysis,'' \emph{IEEE Transactions on Visualization and Computer Graphics}, vol. 28, no. 1, pp. 869--879, 2021.
+
+\bibitem{Qiao2023}
+Y.~Qiao, Y.~Xiong, and Y.~Liu, ``An efficient long-text semantic retrieval approach via utilizing presentation learning on short-text,'' \emph{Complex \& Intelligent Systems}, vol. 10, no. 1, pp. 1--15, 2023.
+
+\bibitem{Sitaula2022}
+C.~Sitaula and T.~B. Shahi, ``Feature extraction techniques for short text classification: A survey,'' \emph{Artificial Intelligence Review}, vol. 55, no. 8, pp. 6433--6474, 2022.
+
+\bibitem{Tandon2021}
+A.~Tandon, A.~Dhir, S.~Talwar, P.~Kaur, and M.~Mäntymäki, ``Dark consequences of social media-induced fear of missing out (FoMO): Social media stalking, comparisons, and fatigue,'' \emph{Technological Forecasting and Social Change}, vol. 171, p. 120931, 2021.
+
+\bibitem{Vimala2025}
+S.~Vimala and G.~A.~S. Sheela, ``Impact of smartphone usage on students' academic performance using contemporary deep learning models,'' \emph{International Journal of Information Technology Research and Applications}, vol. 4, no. 4, pp. 1--8, 2025.
+
+\bibitem{Lugaresi2019}
+C.~Lugaresi \emph{et al.}, ``MediaPipe: A framework for building perception pipelines,'' \emph{arXiv preprint arXiv:1906.08172}, 2019.
+
+\bibitem{Hasnine2023}
+M.~N. Hasnine, H.~T. Bui, G.~Akçapınar, H.~T. Nguyen, and H.~Ueda, ``A real-time learning analytics dashboard for automatic detection of online learners' affective states,'' \emph{Sensors}, vol. 23, no. 9, p. 4243, 2023.
+
+\bibitem{Salice2024}
+F.~Salice, M.~de Vellis, A.~Gwyn Barbieri, A.~Masciadri, and S.~Comai, ``Nonintrusive monitoring and detection of sitting and lying persons: A technological review,'' \emph{IEEE Access}, vol. 12, pp. 178875--178897, 2024.
+
+\bibitem{Sayed2023}
+A.~N. Sayed, F.~Bensaali, Y.~Himeur, and M.~Houchati, ``Edge-based real-time occupancy detection system through a non-intrusive sensing system,'' \emph{Energies}, vol. 16, no. 5, p. 2388, 2023.
+
+\bibitem{Zhu2018}
+M.~Zhu, Y.~Yang, and C.~K. Hsee, ``The mere urgency effect,'' \emph{Journal of Consumer Research}, vol. 45, no. 3, pp. 673--690, 2018.
+
+\bibitem{Murrar2025}
+S.~Murrar, F.~M. Alhaj, F.~Almasalha, and M.~H. Qutqut, ``Transformers for domain-specific text classification: A case study in the banking sector,'' \emph{IEEE Access}, vol. 13, pp. 115063--115078, 2025.
+
+\bibitem{Khan2022}
+Z.~Khan, U.~Naseer, and M.~A. Tahir, ``Short text classification using TF-IDF features and fast text learner,'' \emph{CEUR Workshop Proceedings}, vol. 3181, 2022.
+
+\bibitem{Allam2025}
+H.~Allam, L.~Makubvure, B.~Gyamfi, K.~N. Graham, and K.~Akinwolere, ``Text classification: How machine learning is revolutionizing text categorization,'' \emph{Information}, vol. 16, no. 2, p. 130, 2025.
+
+\bibitem{Cahyani2021}
+D.~E. Cahyani and I.~Patasik, ``Performance comparison of TF-IDF and Word2Vec models for emotion text classification,'' \emph{Bulletin of Electrical Engineering and Informatics}, vol. 10, no. 5, pp. 2780--2788, 2021.
+
+\bibitem{MesaJimenez2022}
+J.~J. Mesa-Jiménez, L.~Stokes, Q.~Yang, and V.~N. Livina, ``Machine learning for text classification in building management systems,'' \emph{Journal of Civil Engineering and Management}, vol. 28, no. 5, pp. 408--421, 2022.
+
+\bibitem{Sauro2016}
+J.~Sauro and J.~R. Lewis, \emph{Quantifying the User Experience: Practical Statistics for User Research}, 2nd ed. Morgan Kaufmann, 2016.
+
+\bibitem{DongDesign2025}
+Z.~Dong \emph{et al.}, ``A design space of behavior change interventions for responsible data science,'' in \emph{ACM Digital Library}, 2025. [Online]. Available: \url{https://dl.acm.org/doi/10.1145/3708359.3712140}
+
+\bibitem{Abhari2022}
+K.~Abhari and I.~Vaghefi, ``Screen time and productivity: An extension of goal-setting theory to explain optimum smartphone use,'' \emph{AIS Transactions on Human-Computer Interaction}, vol. 14, no. 3, pp. 254--288, 2022.
+
+\bibitem{Bangor2008}
+A.~Bangor, P.~T. Kortum, and J.~T. Miller, ``An empirical evaluation of the System Usability Scale,'' \emph{International Journal of Human-Computer Interaction}, vol. 24, no. 6, pp. 574--594, 2008.
+
+\bibitem{Bazarevsky2019}
+V.~Bazarevsky, Y.~Kartynnik, A.~Vakunov, K.~Raveendran, and M.~Grundmann, ``BlazeFace: Sub-millisecond neural face detection on mobile GPUs,'' \emph{arXiv preprint arXiv:1907.05047}, 2019.
+
+\bibitem{King2009}
+D.~E. King, ``Dlib-ml: A machine learning toolkit,'' \emph{Journal of Machine Learning Research}, vol. 10, pp. 1755--1758, 2009.
+
+\bibitem{Fogg2009}
+B.~J. Fogg, ``A behavior model for persuasive design,'' in \emph{Proceedings of the 4th International Conference on Persuasive Technology}, 2009, pp. 1--7.
+
 \end{thebibliography}
 \end{document}

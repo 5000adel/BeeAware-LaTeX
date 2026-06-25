@@ -1,0 +1,75 @@
+REFERENCES 
+
+Center for Humane Technology. (2024). The ledger of harms: How digital platforms impact our attention and well-being. https://www.humanetech.com/youth/the-attention-economy 
+
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to algorithms (3rd ed.). MIT Press. 
+
+Covey, S. R. (1989). The 7 habits of highly effective people. Free Press. https://www.nps.gov/common/uploads/teachers/lessonplans/7%20Habits-of-Highly-Effective-People.pdf 
+
+Department of Education (DepEd) Davao Region. (2025). Strategic plan for digital literacy and responsible citizenship. Regional Memorandum No. 114. https://depedroxi.ph/download-category/2025-2026/ 
+
+Geranco, L. O., & Sarmiento, J. R. (2026). Impact of mobile phone dependency on the study habits of grade 11 and 12 students. Global Scientific Journal, 11(5), 102–115. https://www.globalscientificjournal.com/researchpaper/IMPACT_OF_MOBILE_PHONE_DEPENDENCY_ON_THE_STUDY_HABITS_OF_GRADE_11_AND_12_STUDENTS_.pdf 
+
+Kemp, S. (2025). Digital 2025: Global overview report. DataReportal. https://datareportal.com/reports/digital-2025-global-overview-report 
+
+Lally, P., & Gardner, B. (2013). Promoting habit formation. Health Psychology Review, 7(sup1), S137–S158. https://doi.org/10.1080/17437199.2011.603640 
+
+Tiking, N. J., Dabbang, A. K., & Fadare, S. A. (2024). Navigating the social media abyss: Unraveling the link between academic procrastination and social media addiction. Educational Administration: Theory and Practice, 30(5), 6833–6844. https://www.researchgate.net/publication/380733034_Navigating_The_Social_Media_Abyss_Unraveling_The_Link_Between_Academic_Procrastination_And_Social_Media_Addiction 
+
+Geronimo, M., Maddatu, J. A., Magcamit, I., Saylon, M. L., & Cleofas, J. (2025). Academic procrastination and its relationship with mental well-being, psychological distress, and background characteristics among Metro Manila students enrolled in a hybrid setup. WVSU Research Journal, 14(1), 34–47. https://www.researchgate.net/publication/401195104_Academic_Procrastination_and_its_Relationship_with_Mental_Well-being_Psychological_Distress_and_Background_Characteristics_among_Metro_Manila_Students_Enrolled_in_a_Hybrid_Setup 
+
+Mark, G. (2023). Attention span: A groundbreaking way to restore balance, happiness and productivity. Hanover Square Press. https://dokumen.pub/attention-span-a-groundbreaking-way-to-restore-balance-happiness-and-productivity-9781335449412-9780369733054.html 
+
+Meltwater & We Are Social. (2025). Digital 2026: Philippines report. https://www.datareportal.com/reports/digital-2026-philippines 
+
+Newport, C. (2019). Digital minimalism: Choosing a focused life in a noisy world. Penguin Books. https://ia601802.us.archive.org/22/items/digital-minimalism-by-cal-newport/Digital%20Minimalism%20by%20Cal%20Newport%20.pdf 
+
+Tecson, C. P., & Prado, N. I. (2026). Digital competence, work-life balance, organizational commitment and job performance of local government units in Northern Mindanao, Philippines. International Journal of Research and Innovation in Social Science, 10(2), 5555–5567. https://doi.org/10.47772/IJRISS.2026.10200409 
+
+Thaler, R. H., & Sunstein, C. R. (2021). Nudge: The final edition. Yale University Press. https://www.researchgate.net/publication/357809632_Nudge_The_Final_Edition_edited_by_Richard_H_Thaler_and_Cass_R_Sunstein_London_Allen_Lane_Penguin_2021_edition_Final_xiv_366_pp 
+
+Dong, Z., Wu, K., Battle, L., & Wall, E. (2025). Evaluating behavior change interventions for responsible data science. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI). https://www.sciencedirect.com/science/article/pii/S0740624X22000120 
+
+Narechania, A., Coscia, A., Wall, E., & Endert, A. (2021). Lumos: Increasing awareness of analytic behavior during visual data analysis. IEEE Transactions on Visualization and Computer Graphics, 28(1), 869-879. https://ieeexplore.ieee.org/abstract/document/9552196 
+
+Qiao, Y., Xiong, Y., & Liu, Y. (2023). An efficient long-text semantic retrieval approach via utilizing presentation learning on short-text. Complex & Intelligent Systems, 10(1), 1-15. https://www.researchgate.net/publication/373131056_An_efficient_long-text_semantic_retrieval_approach_via_utilizing_presentation_learning_on_short-text 
+
+Sitaula, C., & Shahi, T. B. (2022). Feature extraction techniques for short text classification: A survey. Artificial Intelligence Review, 55(8), 6433-6474. https://www.researchgate.net/publication/372434484_A_Survey_on_Feature_Extraction_Techniques_Classification_Methods_and_Applications_of_Sentiment_Analysis 
+
+Tandon, A., Dhir, A., Talwar, S., Kaur, P., & Mäntymäki, M. (2021). Dark consequences of social media-induced fear of missing out (FoMO): Social media stalking, comparisons, and fatigue. Technological Forecasting and Social Change, 171, 120931. https://www.researchgate.net/publication/353141394_Dark_consequences_of_social_media-induced_fear_of_missing_out_FoMO_Social_media_stalking_comparisons_and_fatigue 
+
+Vimala, S., & Sheela, G. A. S. (2025). Impact of smartphone usage on students' academic performance using contemporary deep learning models. International Journal of Information Technology Research and Applications, 4(4), 1-8. https://www.researchgate.net/publication/399122589_Impact_of_Smartphone_Usage_on_Students'_Academic_Performance_Using_Contemporary_Deep_Learning_Models 
+
+Lugaresi, C., Tang, J., Nash, H., McClanahan, C., Uboweja, E., Hays, M., Zhang, F., Chang, C.-L., Yong, M. G., Lee, J., Chang, W.-T., Hua, W., Georg, M., & Grundmann, M. (2019). MediaPipe: A framework for building perception pipelines. arXiv preprint arXiv:1906.08172. https://arxiv.org/abs/1906.08172 
+
+Hasnine, M. N., Bui, H. T., Akçapınar, G., Nguyen, H. T., & Ueda, H. (2023). A real-time learning analytics dashboard for automatic detection of online learners' affective states. Sensors, 23(9), 4243. https://doi.org/10.3390/s23094243  
+
+Salice, F., de Vellis, M., Gwyn Barbieri, A., Masciadri, A., & Comai, S. (2024). Nonintrusive monitoring and detection of sitting and lying persons: A technological review. IEEE Access, 12, 178875–178897. https://doi.org/10.1109/ACCESS.2024.3508836  
+
+Sayed, A. N., Bensaali, F., Himeur, Y., & Houchati, M. (2023). Edge-based real-time occupancy detection system through a non-intrusive sensing system. Energies, 16(5), 2388. https://doi.org/10.3390/en16052388  
+
+Zhu, M., Yang, Y., & Hsee, C. K. (2018). The mere urgency effect. Journal of Consumer Research, 45(3), 673–690. https://doi.org/10.1093/jcr/ucy008 
+
+Murrar, S., Alhaj, F. M., Almasalha, F., & Qutqut, M. H. (2025). Transformers for Domain-Specific Text Classification: A Case Study in the Banking Sector. IEEE Access, 13, 115063-115078. https://doi.org/10.1109/ACCESS.2025.3585164  
+
+Khan, Z., Naseer, U., & Tahir, M. A. (2022). Short text classification using TF-IDF features and fast text learner. CEUR Workshop Proceedings, 3181. https://ceur-ws.org/Vol-3181/paper59.pdf  
+
+Allam, H., Makubvure, L., Gyamfi, B., Graham, K. N., & Akinwolere, K. (2025). Text Classification: How Machine Learning Is Revolutionizing Text Categorization. Information, 16(2), 130. https://doi.org/10.3390/info16020130 
+
+Cahyani, D. E., & Patasik, I. (2021). Performance comparison of TF-IDF and Word2Vec models for emotion text classification. Bulletin of Electrical Engineering and Informatics, 10(5), 2780–2788. https://doi.org/10.11591/eei.v10i5.3157  
+
+Mesa-Jiménez, J. J., Stokes, L., Yang, Q., & Livina, V. N. (2022). MACHINE LEARNING FOR TEXT CLASSIFICATION IN BUILDING MANAGEMENT SYSTEMS. JOURNAL OF CIVIL ENGINEERING AND MANAGEMENT, 28(5), 408–421. https://doi.org/10.3846/jcem.2022.16012  
+
+Sauro, J., & Lewis, J. R. (2016). Quantifying the user experience: Practical statistics for user research (2nd ed.). Morgan Kaufmann. https://www.sciencedirect.com/book/monograph/9780128023082/quantifying-the-user-experience 
+
+Dong et al. (2025).  A Design Space of Behavior Change Interventions for Responsible Data Science https://dl.acm.org/doi/10.1145/3708359.3712140 
+
+Abhari, K., & Vaghefi, I. (2022). Screen time and productivity: An extension of goal-setting theory to explain optimum smartphone use. AIS Transactions on Human-Computer Interaction, 14(3), 254–288. https://doi.org/10.17705/1thci.00169 
+
+Bangor, A., Kortum, P. T., & Miller, J. T. (2008). An empirical evaluation of the System Usability Scale. International Journal of Human-Computer Interaction, 24(6), 574–594. https://doi.org/10.1080/10447310802205776 
+
+Bazarevsky, V., Kartynnik, Y., Vakunov, A., Raveendran, K., & Grundmann, M. (2019). BlazeFace: Sub-millisecond neural face detection on mobile GPUs. arXiv preprint arXiv:1907.05047. https://arxiv.org/abs/1907.05047 
+
+King, D. E. (2009). Dlib-ml: A machine learning toolkit. Journal of Machine Learning Research, 10, 1755–1758. http://www.jmlr.org/papers/volume10/king09a/king09a.pdf 
+
+Fogg, B. J. (2009). A behavior model for persuasive design. Proceedings of the 4th International Conference on Persuasive Technology (Article 40, pp. 1–7). ACM. https://doi.org/10.1145/1541948.1541999
